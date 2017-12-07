@@ -120,15 +120,17 @@ class App extends Component {
           </select>
           <input type="text" value={this.state.filterTerm} onKeyUp={this.filterBanks.bind(this)} placeholder="Filter banks" autoFocus/>
           <span>Limit:</span>
-          <select value={this.state.limit} onChange={this.changeLimit.bind(this)}>
+          <select className="" value={this.state.limit} onChange={this.changeLimit.bind(this)}>
             {
               limits.map((limit, index) => {
                 return <option key={index} value={limit}>{limit}</option>
               })
             }
           </select>
-          <span className={offset < 1 ? "prev disabled" : "prev" } onClick={this.loadNextPage.bind(this, 'prev')}>previos</span>
-          <span className="next" onClick={this.loadNextPage.bind(this, 'next')}>next</span>
+          <div className="pagination">
+            <span className={offset < 1 ? "prev disabled" : "prev" } onClick={this.loadNextPage.bind(this, 'prev')}>previos</span>
+            <span className="next" onClick={this.loadNextPage.bind(this, 'next')}>next</span>
+          </div>
         </div>
         <div>
         <table border="1">

@@ -9,27 +9,41 @@ table {
   text-align: center;
   font-size: 13px;
 }
-
-.searchContainer {
+th {
   padding: 10px;
 }
- select {
-   height: 35px;
-   width: 120px;
-   margin-right: 20px;
- }
 
- .address {
-   font-size: 10px;
-   width: 30%;
- }
+td {
+  padding: 5px;
+}
 
- input {
-   width: 35%;
-   padding: 8px;
-   border-radius: 2px;
-   margin-right: 20px;
- }
+tr:nth-child(even) {
+  background: #eee;
+}
+thead {
+  background: #ccc;
+}
+.searchContainer {
+  padding: 10px;
+  background: #e9eef8;
+}
+select {
+  height: 30px;
+  margin-right: 2%;
+  margin-left: 2px;
+}
+
+.address {
+  font-size: 10px;
+  width: 30%;
+}
+
+input {
+  width: 35%;
+  padding: 8px;
+  border-radius: 2px;
+  margin-right: 20px;
+}
 
 .loader-wrapper {
   text-align: center;
@@ -66,6 +80,11 @@ table {
 
 .next {
   padding: 5px 21px;
+}
+
+.pagination {
+  float: right;
+  padding: 7px;
 }
 
 
